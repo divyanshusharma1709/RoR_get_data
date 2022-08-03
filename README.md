@@ -1,24 +1,11 @@
-# README
+# Database Maintainer API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An API using Ruby on Rails to:
 
-Things you may want to cover:
+* Fetch database in JSON format
+* Add information from a LinkedIn profile to the database
 
-* Ruby version
+## Routes:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* /persons: Get database content in JSON format
+* /upload: Add items to the database (Used by the ScrapedIn chrome extension)
