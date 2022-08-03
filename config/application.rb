@@ -10,6 +10,9 @@ module AeroUpload
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    Rails.application.config.action_controller.forgery_protection_origin_check = false
+    config.action_controller.allow_forgery_protection = false
+    config.web_console.whitelisted_ips = '122.161.53.223'
 
     # Configuration for the application, engines, and railties goes here.
     #
